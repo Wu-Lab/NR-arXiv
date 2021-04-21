@@ -17,4 +17,14 @@ If you want to reproduce the results of the corresponding experiment, go to the 
 1. Open the <strong>Zachary.Rproj</strong>.
 2. Run the <strong>Zachary.R</strong> to reproduce our results.
 
-## Application2: NR-F enhances the quality of H
+## Application2: NR-F enhances the quality of Hi-C contact map from the human genome
+1. You can reproduce the denoising results of NR-F on the chromosome 19  by running the <strong>test.m</strong> file. 
+2. The complete results are saved in the <strong>plot result in R</strong> folder and can be displayed by running <strong>plot_performance.R</strong>.
+3. If you want to reproduce all the results, please go to [https://www.ncbi.nlm.nih.gov/geo/](https://www.ncbi.nlm.nih.gov/geo/) (accession number GSE63525) and download the data yourself.
+
+## Application3: NR-B distinguishes strong collaborations of co-authorship networks
+1. Open the <strong>co-author net.Rproj</strong>.
+2. Run the <strong>plot_performance.R</strong> to reproduce our results.
+
+## Application4: NR-B improves the accuracy of Gene Regulatory Networks inference 
+1. Run the <strong>test.m</strong> to reproduce our results.
