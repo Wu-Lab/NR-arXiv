@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------
-# Network Refinement: A random walk-based framework for network denoising
+# Network Refinement: A random walk-based framework for denoising biological and social networks
 ------------------------------------------------------------------------------------------------------
 
 ## Overview
