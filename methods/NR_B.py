@@ -5,7 +5,7 @@ from numpy.linalg import inv
 '''
 Parameters Explanation:
 mat: input noisy matrix
-m: Parameters of NR_F, controlling the extent of matrix modification
+m: Parameters of NR_B, controlling the extent of matrix modification
 eps1: Value added to the whole matrix in preprocessing step
 eps2: Value added to the diagonal in preprocessing step
 '''
