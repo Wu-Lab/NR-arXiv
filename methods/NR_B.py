@@ -6,15 +6,15 @@ from numpy.linalg import inv
 Parameters Explanation:
 mat: input noisy matrix
 m: Parameters of NR_F, controlling the extent of matrix modification
-eps1: Value added to the diagonal in preprocessing step
-eps2: Value added to the whole matrix in preprocessing step
+eps1: Value added to the whole matrix in preprocessing step
+eps2: Value added to the diagonal in preprocessing step
 '''
 
 def NR_B(mat, m, eps1, eps2):
     
     # preprocessing
     n = mat.shape[0]
-    mat = mat + eps1 * np.eye(n) + eps2
+    mat = mat + eps1 + eps2 * np.eye(n)
     
     # change into transition matrix
     P1 = mat / mat.sum(1).reshape(-1, 1)
