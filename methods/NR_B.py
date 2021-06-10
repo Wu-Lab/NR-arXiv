@@ -40,4 +40,4 @@ def NR_B(mat, m, eps1, eps2):
         net_new = net_new + net_new.T
         output_network = net_new-np.diag(np.diag(net_new))
         output_network = output_network / output_network.max()
-        return (output_network)
+        return output_network
