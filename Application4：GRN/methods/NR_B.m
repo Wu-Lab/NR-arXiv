@@ -1,4 +1,4 @@
-function [output_network]=NETRW_B(mat,m)
+function [output_network]=NR_B(mat,m)
 
 [n_tf,n]=size(mat);
 for i=1:n_tf
