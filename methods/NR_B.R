@@ -24,12 +24,19 @@ NR_B <- function(mat, m, eps1, eps2) {
   
   
   # compute the stationary distribution and the output matrix
-  stat_d <- abs(Null(P2 - diag(n)))
-  net_new <- diag(as.vector(stat_d)) %*% P2
-  
-  net_new <- net_new + t(net_new)
-  output_network <- net_new - diag(diag(net_new))
-  output_network <-
+  stationary_d <- abs(Null(P2 - diag(n)))
+  stationary_d <- stationary_d / sum(stationary_d)
+  if (dim(stationary_d)[2] == 0) {
+    print('The stationary distribution does not exist！')
+  } else if (dim(stationary_d)[2] > 1) {
+    print('The stationary distribution is not unique！')
+  } else{
+    net_new <- diag(as.vector(stat_d)) %*% P2
+    net_new <- net_new + t(net_new)
+    output_network <- net_new - diag(diag(net_new))
+    output_network <-
     (output_network - min(output_network)) / (max(output_network) - min(output_network))
+    return(output_network)
+  }
   
 }
