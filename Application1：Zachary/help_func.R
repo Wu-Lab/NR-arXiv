@@ -13,6 +13,7 @@ change_into_adj <- function(w, thre) {
 
 # NR_F algorithm
 NR_F <- function(A) {
+  n <- dim(mat)[1]
   p1 <- A / rowSums(A)
   p2 <- p1 %*% solve(diag(2, nrow = n) - p1)
   stationary_d <- Null(p2 - diag(1, nrow = n))
