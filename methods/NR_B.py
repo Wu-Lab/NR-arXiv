@@ -30,6 +30,7 @@ def NR_B(mat, m, eps1, eps2):
     
     # compute the stationary distribution and the output matrix
     stationary_d = null_space((P2 - np.eye(n)).T)
+    stationary_d = stationary_d / stationary_d.sum()
     if stationary_d[0].shape[0]==0:
         print('The stationary distribution does not exist！')
     elif stationary_d[0].shape[0]>1:
