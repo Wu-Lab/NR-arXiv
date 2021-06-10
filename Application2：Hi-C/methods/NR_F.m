@@ -1,4 +1,4 @@
-function [W_output] = NETRW_F(W_input,m)
+function [W_output] = NR_F(W_input,m)
 
 n=length(W_input);
 
