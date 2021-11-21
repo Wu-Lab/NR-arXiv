@@ -31,7 +31,7 @@ NR_B <- function(mat, m, eps1, eps2) {
   } else if (dim(stationary_d)[2] > 1) {
     print('The stationary distribution is not unique！')
   } else{
-    net_new <- diag(as.vector(stat_d)) %*% P2
+    net_new <- diag(as.vector(stationary_d)) %*% P2
     net_new <- net_new + t(net_new)
     output_network <- net_new - diag(diag(net_new))
     output_network <-
