@@ -2,6 +2,11 @@
 # Network Refinement: A random walk-based framework for denoising biological and social networks
 ------------------------------------------------------------------------------------------------------
 
+## Authors:
+yujiating@amss.ac.cn
+
+lywu@amss.ac.cn
+
 ## Overview
 NR (Network Refinement) is a network denoising framework that adjusts the edge weights by applying a graph nonlinear operator based on a diffusion process on random walks. Specifically, the framework consists of two approaches named NR-F and NR-B, which improve the SNR of noisy input networks from two different perspectives: NR-F aims at enhancing signal strength, while NR-B aims at weakening noise strength. We will choose from which angle to improve the SNR of the network according to the characteristics of the network itself. We show that NR can: (1) Improve the accuracy of Community Detection; (2) Enhance the quality of Hi-C contact map; (3) Distinguish strong and weak relationships; (4) Increase the accuracy of Gene Regulatory Networks inference.
 
